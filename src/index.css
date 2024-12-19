@@ -1,0 +1,32 @@
+/* index.css */
+
+/* Tailwind's base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default (light) mode styles */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+html.dark body {
+  background-color: #1a202c; /* Dark background */
+  color: white; /* Light text */
+}
+
+/* Dark mode header specific styles */
+html.dark .bg-white {
+  background-color: #2d3748; /* Dark background for header */
+}
+
+html.dark .text-gray-800 {
+  color: #e2e8f0; /* Lighter gray text for dark mode */
+}
+
+html.dark .text-white {
+  color: #1a202c; /* Darker text for light mode */
+}
